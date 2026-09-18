@@ -18,7 +18,7 @@ export default function Scene() {
   // Draw line
   useEffect(() => {
     const split = SplitText.create('.scene-button-text', {
-      type: 'chars',
+      type: 'words, chars',
     })
 
     const lineTween = gsap.fromTo(
@@ -36,7 +36,7 @@ export default function Scene() {
     const textTween = gsap.from(split.chars, {
       opacity: 0,
       scale: 0,
-      y: 75,
+      y: 50,
       duration: 0.75,
       ease: 'power2.inOut',
       stagger: { each: 0.05, from: 'random' },

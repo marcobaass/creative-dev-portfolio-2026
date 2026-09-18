@@ -3,12 +3,22 @@
   top: 61.5%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 1.5rem;
   color: black;
   font-family: Poppins, sans-serif;
   background-color: transparent !important;
   border: none !important;
   cursor: pointer !important;
+}
+
+.scene-button-text {
+  font-size: clamp(1rem, 2.5vw + 0.5rem, 2.5rem);
+  font-weight: 100;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.scene-button-text .word {
+  display: inline-block;
 }
 
 .scene-button-text:hover {
